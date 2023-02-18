@@ -40,7 +40,7 @@ typedef struct deck_node_s
 {
 	const card_t *card;
 	struct deck_node_s *prev;
-	sruct deck_node_s *next;
+	struct deck_node_s *next;
 } deck_node_t;
 
 void sort_deck(deck_node_t **deck);
