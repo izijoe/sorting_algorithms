@@ -14,17 +14,17 @@ typedef struct listint_s
 	const int n;
 	struct listint_s *prev;
 	struct listint_s *next;
-} listint_t
+} listint_s;
 
 void bubble_sort(int *array, size_t size);
 void print_array(const int *array, size_t size);
-void print_list(const listint_t *list);
-listint_t *swap_node(listint_t *node, listint_t **list);
-void insertion_sort_list(listint_t **list);
+void print_list(const listint_s *list);
+listint_s *swap_node(listint_s *node, listint_s **list);
+void insertion_sort_list(listint_s **list);
 void selection_sort(int *array, size_t size);
 void quick_sort(int *array, size_t size);
 void shell_sort(int *array, size_t size);
-void cocktail_sort_list(listint_t **list);
+void cocktail_sort_list(listint_s **list);
 void counting_sort(int *array, size_t size);
 void merge_sort(int *array, size_t size);
 void heap_sort(int *array, size_t size);
